@@ -1,0 +1,10 @@
+:root {
+  --primary-font-family: "Playfair Display", serif;
+  --secondary-font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-family: var(--primary-font-family);
+}
+h2 {
+  font-family: var(--secondary-font-family);
+}
