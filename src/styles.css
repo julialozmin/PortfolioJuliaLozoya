@@ -61,20 +61,25 @@ footer {
   border-radius: 4px;
   transition: 200ms ease-in-out;
   text-decoration: none;
-  color: #000000;
 }
 
 .basic-link {
   margin-top: 30px;
   padding: 18px 30px 18px 30px;
+  background-color: var(--secondary-color);
+  color: var(--branding-color);
+}
+.basic-link:hover {
+  color: var(--secondary-color);
+  background-color: var(--branding-color);
 }
 
 .secondary-link {
   margin-top: 20px;
   padding: 10px 22px 10px 22px;
+  color: var(--secondary-color);
+  background-color: var(--branding-color);
 }
-
-.basic-link:hover,
 .secondary-link:hover {
   color: var(--branding-color);
   background-color: var(--secondary-color);
