@@ -3,11 +3,58 @@
   --secondary-font-family: "Poppins", sans-serif;
 }
 
+body {
+  text-align: center;
+}
+
 h1 {
   font-family: var(--primary-font-family);
   font-size: 96px;
 }
 h2 {
   font-family: var(--secondary-font-family);
-  font-size: 64px;
+  font-size: 36px;
+}
+h3 {
+  font-size: 24px;
+}
+p {
+  font-family: var(--secondary-font-family);
+}
+i {
+  font-size: 24px;
+}
+footer {
+  margin: 100px;
+  padding: 100px;
+  background-color: #f8f9fa;
+}
+
+.navbar-style {
+  max-width: 1320px;
+}
+
+.header-container {
+  padding: 200px 0px 200px 0px;
+  background-color: #f8f9fa;
+}
+
+.basic-link {
+  margin: 30px;
+  padding: 18px 30px 18px 30px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  transition: 200ms ease-in-out;
+  text-decoration: none;
+  color: black;
+}
+
+.secondary-link {
+  margin: 20px;
+  padding: 10px 22px 10px 22px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  transition: 200ms ease-in-out;
+  text-decoration: none;
+  color: black;
 }
