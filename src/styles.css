@@ -43,7 +43,6 @@ footer {
 
 .navbar-style {
   max-width: 1320px;
-  font-family: var(--secondary-font-family);
 }
 
 .hero {
@@ -85,3 +84,5 @@ footer {
   display: flex;
   justify-content: space-evenly;
 }
+
+@media (max-width: );
