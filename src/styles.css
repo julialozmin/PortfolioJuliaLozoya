@@ -33,7 +33,7 @@ p {
   font-size: 16px;
 }
 i {
-  font-size: 24px;
+  font-size: 30px;
 }
 footer {
   margin: 100px;
@@ -80,9 +80,52 @@ footer {
   background-color: var(--secondary-color);
 }
 
-.tech-stack {
-  display: flex;
-  justify-content: space-evenly;
-}
+@media (max-width: 570px) {
+  h1 {
+    font-weight: bold;
+    font-size: 46px;
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
+  footer {
+    margin: 60px 0px 50px 0px;
+    padding: 2px;
+    text-align: center;
+  }
 
-@media (max-width: );
+  .hero {
+    padding: 80px 0px 80px 0px;
+  }
+  .brief-description {
+    font-size: 16px;
+  }
+  .basic-link {
+    margin-top: 60px;
+    padding: 12px 14px 12px 14px;
+  }
+
+  .secondary-link {
+    margin-top: 20px;
+    padding: 8px 14px 8px 14px;
+  }
+
+  .tech-stack div {
+    margin: 20px 0px 0px;
+  }
+
+  .projects {
+    margin-top: 0px;
+  }
+  .projects img {
+    max-width: 60%;
+    margin-top: 30px;
+  }
+}
