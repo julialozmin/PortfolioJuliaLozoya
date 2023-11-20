@@ -80,3 +80,8 @@ footer {
   color: var(--branding-color);
   background-color: var(--secondary-color);
 }
+
+.tech-stack {
+  display: flex;
+  justify-content: space-evenly;
+}
