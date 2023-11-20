@@ -1,25 +1,33 @@
 :root {
   --primary-font-family: "Playfair Display", serif;
   --secondary-font-family: "Poppins", sans-serif;
+  --branding-color: #f8f9fa;
+  --secondary-color: #272142;
 }
 
 body {
-  text-align: center;
+  font-family: var(--secondary-font-family);
 }
 
 h1 {
   font-family: var(--primary-font-family);
+  font-weight: bold;
   font-size: 96px;
 }
+
+h2,
+h3 {
+  color: var(--secondary-color);
+}
 h2 {
-  font-family: var(--secondary-font-family);
   font-size: 36px;
+  font-weight: bold;
 }
 h3 {
   font-size: 24px;
 }
 p {
-  font-family: var(--secondary-font-family);
+  font-size: 16px;
 }
 i {
   font-size: 24px;
@@ -27,34 +35,45 @@ i {
 footer {
   margin: 100px;
   padding: 100px;
-  background-color: #f8f9fa;
+  background-color: var(--branding-color);
 }
 
 .navbar-style {
   max-width: 1320px;
+  font-family: var(--secondary-font-family);
 }
 
 .header-container {
-  padding: 200px 0px 200px 0px;
-  background-color: #f8f9fa;
+  padding: 160px 0px 160px 0px;
+  background-color: var(--branding-color);
+  text-align: center;
+}
+.brief-description {
+  font-size: 18px;
+  text-align: center;
+}
+
+.basic-link,
+.secondary-link {
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  transition: 200ms ease-in-out;
+  text-decoration: none;
+  color: #000000;
 }
 
 .basic-link {
   margin: 30px;
   padding: 18px 30px 18px 30px;
-  border: 1px solid grey;
-  border-radius: 4px;
-  transition: 200ms ease-in-out;
-  text-decoration: none;
-  color: black;
 }
 
 .secondary-link {
   margin: 20px;
   padding: 10px 22px 10px 22px;
-  border: 1px solid grey;
-  border-radius: 4px;
-  transition: 200ms ease-in-out;
-  text-decoration: none;
-  color: black;
+}
+
+.basic-link:hover,
+.secondary-link:hover {
+  color: var(--branding-color);
+  background-color: var(--secondary-color);
 }
