@@ -148,7 +148,7 @@ footer {
 
   .hero,
   .content-container {
-    padding: 80px 5px 80px 5px;
+    padding: 80px 5px 0px 5px;
     text-align: center;
   }
   .brief-description {
