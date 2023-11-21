@@ -90,7 +90,7 @@ footer {
 }
 
 .about-section {
-  padding-top: 150px;
+  padding-top: 200px;
 }
 .about-section h1 {
   font-size: 64px;
@@ -105,7 +105,8 @@ footer {
 }
 
 @media (max-width: 570px) {
-  h1 {
+  h1,
+  .about-section h1 {
     font-weight: bold;
     font-size: 46px;
   }
@@ -113,7 +114,8 @@ footer {
     font-size: 22px;
     font-weight: bold;
   }
-  h3 {
+  h3,
+  .about-section h3 {
     font-size: 16px;
   }
   p {
@@ -125,8 +127,10 @@ footer {
     text-align: center;
   }
 
-  .hero {
-    padding: 80px 0px 80px 0px;
+  .hero,
+  .about-section {
+    padding: 80px 5px 80px 5px;
+    text-align: center;
   }
   .brief-description {
     font-size: 16px;
@@ -150,6 +154,11 @@ footer {
   }
   .projects img {
     max-width: 60%;
+    margin-top: 30px;
+  }
+
+  .photo-portrait {
+    max-height: 200px;
     margin-top: 30px;
   }
 }
