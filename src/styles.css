@@ -89,13 +89,13 @@ footer {
   border-radius: 5px;
 }
 
-.about-section {
+.content-container {
   padding-top: 200px;
 }
-.about-section h1 {
+.content-container h1 {
   font-size: 64px;
 }
-.about-section h3 {
+.content-container h3 {
   font-size: 18px;
 }
 
@@ -104,9 +104,16 @@ footer {
   border-radius: 40px;
 }
 
+.projects-section {
+  padding-top: 100px;
+}
+.content-container h1 {
+  font-size: 64px;
+}
+
 @media (max-width: 570px) {
   h1,
-  .about-section h1 {
+  .content-container h1 {
     font-weight: bold;
     font-size: 46px;
   }
@@ -115,7 +122,7 @@ footer {
     font-weight: bold;
   }
   h3,
-  .about-section h3 {
+  .content-container h3 {
     font-size: 16px;
   }
   p {
@@ -128,7 +135,7 @@ footer {
   }
 
   .hero,
-  .about-section {
+  .content-container {
     padding: 80px 5px 80px 5px;
     text-align: center;
   }
