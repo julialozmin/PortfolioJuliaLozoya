@@ -41,19 +41,18 @@ i {
   font-size: 30px;
   color: var(--secondary-color);
 }
+
 footer {
   margin: 100px;
   padding: 100px;
   background-color: var(--branding-color);
 }
-
 footer i {
   background: var(--branding-color);
   padding: 14px 14px;
   border-radius: 50%;
   transition: all 200ms ease-in-out;
 }
-
 footer i:hover {
   background: var(--secondary-color);
   color: var(--branding-color);
