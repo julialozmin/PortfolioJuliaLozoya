@@ -105,7 +105,7 @@ footer i:hover {
 }
 
 .tech-stack {
-  max-width: 950px;
+  max-width: 650px;
   margin: 0 auto;
   display: block;
   padding-top: 20px;
@@ -145,10 +145,6 @@ footer i:hover {
   border-radius: 20px;
   display: block;
   margin: 0 auto;
-}
-
-.download {
-  margin-top: 40px;
 }
 
 .project {
@@ -207,10 +203,11 @@ footer i:hover {
 
   .projects {
     margin-top: 0px;
+    text-align: center;
   }
   .projects img {
     max-width: 60%;
-    margin-top: 30px;
+    margin: 20px 0 20px;
   }
 
   .photo-portrait {
