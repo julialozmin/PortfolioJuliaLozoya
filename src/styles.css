@@ -1,8 +1,9 @@
 :root {
   --primary-font-family: "Playfair Display", serif;
-  --secondary-font-family: "Poppins", sans-serif;
+  --secondary-font-family: "Lato", sans-serif;
   --branding-color: #f8f9fa;
-  --secondary-color: #272142;
+  --secondary-color: #212529;
+  --accent-color: #568265;
 }
 
 body {
@@ -61,6 +62,10 @@ footer i:hover {
 
 .navbar-style {
   max-width: 1320px;
+}
+
+.navbar-brand {
+  font-family: var(--primary-font-family);
 }
 
 .hero {
