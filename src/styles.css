@@ -49,6 +49,12 @@ footer {
   padding: 100px;
   background-color: var(--branding-color);
 }
+
+footer h4 {
+  margin-bottom: 0px;
+  align-self: center;
+}
+
 footer i {
   background: var(--branding-color);
   padding: 14px 14px;
