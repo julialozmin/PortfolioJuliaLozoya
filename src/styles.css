@@ -185,6 +185,11 @@ footer {
   padding-top: 20px;
 }
 
+.info-banner {
+  background-color: var(--branding-color);
+  border-radius: 15px;
+}
+
 .about h1 {
   font-size: 40px;
 }
