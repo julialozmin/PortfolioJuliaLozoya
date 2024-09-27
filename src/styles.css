@@ -4,6 +4,7 @@
   --branding-color: #f8f9fa;
   --secondary-color: #212529;
   --accent-color: #568265;
+  --attention-color: #e24a63;
 }
 
 body {
@@ -45,25 +46,7 @@ i {
 }
 
 footer {
-  margin: 100px;
-  padding: 100px;
-  background-color: var(--branding-color);
-}
-
-footer h4 {
-  margin-bottom: 0px;
-  align-self: center;
-}
-
-footer i {
-  background: var(--branding-color);
-  padding: 14px 14px;
-  border-radius: 50%;
-  transition: all 200ms ease-in-out;
-}
-footer i:hover {
-  background: var(--secondary-color);
-  color: var(--branding-color);
+  margin-top: 120px;
 }
 
 .navbar-style {
@@ -72,6 +55,46 @@ footer i:hover {
 
 .navbar-brand {
   font-family: var(--primary-font-family);
+}
+
+.contact-box {
+  margin-bottom: 120px;
+  padding: 100px;
+  background-color: var(--branding-color);
+  border-radius: 14px;
+  max-width: 720px;
+}
+
+.contact-box h4 {
+  margin-bottom: 0px;
+  align-self: center;
+}
+
+.contact-box i {
+  background: var(--branding-color);
+  padding: 14px 14px;
+  border-radius: 50%;
+  transition: all 200ms ease-in-out;
+}
+
+.contact-box i:hover {
+  background: var(--secondary-color);
+  color: var(--branding-color);
+}
+
+.banner {
+  background-color: var(--accent-color);
+  padding: 20px;
+}
+
+.banner p {
+  color: var(--branding-color);
+}
+
+.banner a {
+  color: var(--branding-color);
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .hero {
@@ -162,6 +185,19 @@ footer i:hover {
   padding-top: 20px;
 }
 
+.contact h5 {
+  color: var(--attention-color);
+}
+
+.contact a {
+  color: var(--secondary-color);
+  font-size: 20px;
+  text-decoration: none;
+}
+.contact i {
+  font-size: 20px;
+}
+
 @media (max-width: 570px) {
   h1,
   .content-container h1 {
@@ -181,12 +217,14 @@ footer i:hover {
     font-size: 14px;
     padding: 0 4px 0 4px;
   }
-  footer {
-    margin: 60px 0px 50px 0px;
-    padding: 20px;
-  }
+
   i {
     font-size: 26px;
+  }
+
+  .contact-box {
+    margin: 60px 0px 50px 0px;
+    padding: 20px;
   }
 
   .hero,
