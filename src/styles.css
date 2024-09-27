@@ -185,6 +185,14 @@ footer {
   padding-top: 20px;
 }
 
+.about h1 {
+  font-size: 40px;
+}
+
+.about h2 {
+  font-size: 18px;
+}
+
 .contact h5 {
   color: var(--attention-color);
 }
