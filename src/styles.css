@@ -190,6 +190,98 @@ footer {
   border-radius: 15px;
 }
 
+/* probando probando */
+
+/* html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+} */
+
+/* body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin: 0;
+} */
+
+.items {
+  height: 600px;
+  padding: 100px;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.1s;
+  transform: scale(0.98);
+  will-change: transform;
+  position: relative;
+  perspective: 500px;
+}
+
+.items.active {
+  cursor: -webkit-grabbing;
+  transform: scale(1);
+}
+
+.item {
+  width: 487.82px;
+  height: calc(100% - 40px);
+  display: inline-flex;
+  align-items: right;
+  justify-content: center;
+}
+
+/* .carousel {
+  box-sizing: border-box;
+
+  overflow: hidden;
+  cursor: grab;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  height: 40vh;
+}
+
+.is-dragging {
+  cursor: grabbing;
+}
+
+.carousel-list {
+  list-style: none;
+  counter-reset: count;
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.carousel-item {
+  counter-increment: count;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 30vw;
+  height: 100%;
+  padding: 0 1.5vw;
+  overflow: hidden;
+} */
+
+/* hasta aqui */
+
 .about h1 {
   font-size: 40px;
 }
