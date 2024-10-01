@@ -213,8 +213,8 @@ footer {
 } */
 
 .items {
-  height: 600px;
-  padding: 100px;
+  height: 550px;
+  padding: 50px;
   width: 100%;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -233,12 +233,19 @@ footer {
   transform: scale(1);
 }
 
-.item {
-  width: 487.82px;
+.item,
+.item2 {
+  width: 600px;
+  padding: 28px;
   height: calc(100% - 40px);
   display: inline-flex;
   align-items: right;
   justify-content: center;
+}
+
+.item img,
+.item2 img {
+  -webkit-user-drag: none;
 }
 
 /* .carousel {

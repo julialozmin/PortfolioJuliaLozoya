@@ -257,51 +257,113 @@
           <h2 class="mb-5 fs-2 text">Business Intelligence</h2>
           <div class="row">
             <div class="carousel GoogleFiber">
-            <div class="items">
-              <div class="item item1">
-                <img src="/images/GoogleFiber/Slide1.PNG" alt="0" />
+              <div class="items">
+                <div class="item item1">
+                  <img src="/images/GoogleFiber/Slide1.PNG" alt="Slide1" />
+                </div>
+                <div class="item item2">
+                  <img src="/images/GoogleFiber/Slide2.PNG" alt="Slide2" />
+                </div>
+                <div class="item item3">
+                  <img src="/images/GoogleFiber/Slide3.PNG" alt="Slide3" />
+                </div>
+                <div class="item item4">
+                  <img src="/images/GoogleFiber/Slide4.PNG" alt="Slide4" />
+                </div>
+                <div class="item item5">
+                  <img src="/images/GoogleFiber/Slide5.PNG" alt="Slide5" />
+                </div>
+                <div class="item item6">
+                  <img src="/images/GoogleFiber/Slide6.PNG" alt="Slide6" />
+                </div>
+                <div class="item item7">
+                  <img src="/images/GoogleFiber/Slide7.PNG" alt="Slide7" />
+                </div>
+                <div class="item item8">
+                  <img src="/images/GoogleFiber/Slide8.PNG" alt="Slide8" />
+                </div>
+                <div class="item item9">
+                  <img src="/images/GoogleFiber/Slide9.PNG" alt="Slide9" />
+                </div>
+                <div class="item item10">
+                  <img src="/images/GoogleFiber/Slide10.PNG" alt="Slide10" />
+                </div>
+                <div class="item item11">
+                  <img src="/images/GoogleFiber/Slide11.PNG" alt="Slide11" />
+                </div>
+                <div class="item item12">
+                  <img src="/images/GoogleFiber/Slide12.PNG" alt="Slide12" />
+                </div>
               </div>
-              <div class="item item2">
-                <img src="/images/GoogleFiber/Slide2.PNG" alt="1" />
-              </div>
-              <div class="item item3">
-                <img src="/images/GoogleFiber/Slide3.PNG" alt="2" />
-              </div>
-              <div class="item item4">
-                <img src="/images/GoogleFiber/Slide4.PNG" alt="3" />
-              </div>
-              <div class="item item5">
-                <img src="/images/GoogleFiber/Slide5.PNG" alt="4" />
-              </div>
-              <div class="item item6">
-                <img src="/images/GoogleFiber/Slide6.PNG" alt="5" />
-              </div>
-              <div class="item item7">
-                <img src="/images/GoogleFiber/Slide7.PNG" alt="6" />
-              </div>
-              <div class="item item8">
-                <img src="/images/GoogleFiber/Slide8.PNG" alt="7" />
-              </div>
-              <div class="item item9">
-                <img src="/images/GoogleFiber/Slide9.PNG" alt="8" />
-              </div>
-              <div class="item item10">
-                <img src="/images/GoogleFiber/Slide10.PNG" alt="9" />
-              </div>
-              <div class="item item11">
-                <img src="/images/GoogleFiber/Slide11.PNG" alt="10" />
-              </div>
-              <div class="item item12">
-                <img src="/images/GoogleFiber/Slide12.PNG" alt="11" />
-              </div> 
-              <!-- end of carousel -->
             </div>
           </div>
-          <!-- CAROUSEL OF BI VISUALIZATIONS -->
-          <!-- </div> -->
+          <div class="row">
+            <div class="carousel MinesottaTraffic">
+              <div class="items">
+                <div class="item item1">
+                  <img
+                    src="/images/MinnesotaDepartmentOfTransportation/Minnesota1.PNG"
+                    alt="Slide1"
+                  />
+                </div>
+                <div class="item item2">
+                  <img
+                    src="/images/MinnesotaDepartmentOfTransportation//Minnesota2.PNG"
+                    alt="Slide2"
+                  />
+                </div>
+                <div class="item item3">
+                  <img
+                    src="/images/MinnesotaDepartmentOfTransportation//Minnesota3.PNG"
+                    alt="Slide3"
+                  />
+                </div>
+                <div class="item item4">
+                  <img
+                    src="/images/MinnesotaDepartmentOfTransportation//Minnesota4.PNG"
+                    alt="Slide4"
+                  />
+                </div>
+                <div class="item item5">
+                  <img
+                    src="/images/MinnesotaDepartmentOfTransportation//Minnesota5.PNG"
+                    alt="Slide5"
+                  />
+                </div>
+                <div class="item item6">
+                  <img
+                    src="/images/MinnesotaDepartmentOfTransportation//Minnesota6.PNG"
+                    alt="Slide6"
+                  />
+                </div>
+                <div class="item item7">
+                  <img
+                    src="/images/MinnesotaDepartmentOfTransportation//Minnesota7.PNG"
+                    alt="Slide7"
+                  />
+                </div>
+                <div class="item item8">
+                  <img
+                    src="/images/MinnesotaDepartmentOfTransportation//Minnesota8.PNG"
+                    alt="Slide8"
+                  />
+                </div>
+                <div class="item item9">
+                  <img
+                    src="/images/MinnesotaDepartmentOfTransportation//Minnesota9.PNG"
+                    alt="Slide9"
+                  />
+                </div>
+                <div class="item item10">
+                  <img
+                    src="/images/MinnesotaDepartmentOfTransportation//Minnesota10.PNG"
+                    alt="Slide10"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <!-- content container -->
       </div>
     </div>
 
@@ -356,6 +418,7 @@
       let scrollLeft;
 
       slider.addEventListener("mousedown", (e) => {
+        console.log("hello");
         isDown = true;
         slider.classList.add("active");
         startX = e.pageX - slider.offsetLeft;
