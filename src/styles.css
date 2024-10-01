@@ -187,10 +187,11 @@ footer {
 
 .info-banner {
   background-color: var(--branding-color);
-  border-radius: 15px;
+  border-radius: 14px;
 }
 
-.popup {
+.popup,
+.work-popup {
   position: fixed;
   z-index: 1;
   left: 0;
@@ -202,10 +203,21 @@ footer {
   display: none;
 }
 
-.popup-content {
+.popup-content,
+.work-popup-content {
   background-color: white;
-  margin: 7% auto;
   border: 1px solid #888888;
+}
+
+.work-popup-content {
+  margin: 6% auto;
+  padding: 20px;
+  border-radius: 14px;
+  width: 100%;
+}
+
+.popup-content {
+  margin: 7% auto;
   width: 80%;
   font-weight: bolder;
 }
