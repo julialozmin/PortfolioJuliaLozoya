@@ -294,12 +294,15 @@
                 <div class="item item12">
                   <img src="/images/GoogleFiber/Slide12.PNG" alt="Slide12" />
                 </div>
+                <div class="item item13">
+                  <img src="/images/GoogleFiber/Slide1.PNG" alt="Slide1" />
+                </div>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="carousel MinesottaTraffic">
-              <div class="items">
+            <div class="carousel2 MinesottaTraffic">
+              <div class="items2">
                 <div class="item item1">
                   <img
                     src="/images/MinnesotaDepartmentOfTransportation/Minnesota1.PNG"
@@ -360,6 +363,12 @@
                     alt="Slide10"
                   />
                 </div>
+                <div class="item item11">
+                  <img
+                    src="/images/MinnesotaDepartmentOfTransportation/Minnesota1.PNG"
+                    alt="Slide1"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -412,35 +421,57 @@
       </div>
     </footer>
     <script>
-      const slider = document.querySelector(".items");
+      let slider;
+      const slider1 = document.querySelector(".items");
+      const slider2 = document.querySelector(".items2");
       let isDown = false;
       let startX;
       let scrollLeft;
 
-      slider.addEventListener("mousedown", (e) => {
-        console.log("hello");
-        isDown = true;
-        slider.classList.add("active");
-        startX = e.pageX - slider.offsetLeft;
-        scrollLeft = slider.scrollLeft;
-      });
-      slider.addEventListener("mouseleave", () => {
-        isDown = false;
-        slider.classList.remove("active");
-      });
+      function selectSlider1() {
+        slider = slider1;
+        startSliding();
+      }
 
-      slider.addEventListener("mouseup", () => {
-        isDown = false;
-        slider.classList.remove("active");
-      });
+      function selectSlider2() {
+        slider = slider2;
+        startSliding();
+      }
 
-      slider.addEventListener("mousemove", (e) => {
-        if (!isDown) return; // stop the fn from running
-        e.preventDefault();
-        const x = e.pageX - slider.offsetLeft;
-        const walk = (x - startX) * 3;
-        slider.scrollLeft = scrollLeft - walk;
-      });
+      function startSliding(e) {
+        function moveMouse(e) {
+          isDown = true;
+          slider.classList.add("active");
+          startX = e.pageX - slider.offsetLeft;
+          scrollLeft = slider.scrollLeft;
+        }
+
+        function leaveMouse() {
+          isDown = false;
+          slider.classList.remove("active");
+        }
+
+        function unselect() {
+          isDown = false;
+          slider.classList.remove("active");
+        }
+
+        function moveSlider(e) {
+          if (!isDown) return;
+          e.preventDefault();
+          const x = e.pageX - slider.offsetLeft;
+          const walk = (x - startX) * 3;
+          slider.scrollLeft = scrollLeft - walk;
+        }
+
+        slider.addEventListener("mousedown", moveMouse);
+        slider.addEventListener("mouseleave", leaveMouse);
+        slider.addEventListener("mouseup", unselect);
+        slider.addEventListener("mousemove", moveSlider);
+      }
+
+      slider1.addEventListener("mouseover", selectSlider1);
+      slider2.addEventListener("mouseover", selectSlider2);
     </script>
   </body>
 </html>
