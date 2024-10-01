@@ -333,7 +333,7 @@
         <div id="popupMinesotta" class="popup">
           <div class="popup-content">
             <div class="row">
-              <div class="col-md-12 carousel2 MinesottaTraffic">
+              <div class="col-md-12 carousel MinesottaTraffic">
                 <div class="items2">
                   <div class="item item1">
                     <img
@@ -455,9 +455,58 @@
       </div>
     </footer>
     <script>
-      triggerGoogle.addEventListener("click", function () {
+      let slider;
+      const slider1 = document.querySelector(".items");
+      const slider2 = document.querySelector(".items2");
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+
+      function moveMouse(e) {
+        isDown = true;
+        slider.classList.add("active");
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+      }
+
+      function leaveMouse() {
+        isDown = false;
+        slider.classList.remove("active");
+      }
+
+      function unselect() {
+        isDown = false;
+        slider.classList.remove("active");
+      }
+
+      function moveSlider(e) {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 3;
+        slider.scrollLeft = scrollLeft - walk;
+      }
+
+      function detectMovement(slider) {
+        slider.addEventListener("mousedown", moveMouse);
+        slider.addEventListener("mouseleave", leaveMouse);
+        slider.addEventListener("mouseup", unselect);
+        slider.addEventListener("mousemove", moveSlider);
+      }
+
+      function displayGoogle() {
         popupGoogle.classList.add("show");
-      });
+        slider = slider1;
+        detectMovement(slider);
+      }
+
+      function displayMinesotta() {
+        popupMinesotta.classList.add("show");
+        slider = slider2;
+        detectMovement(slider);
+      }
+
+      triggerGoogle.addEventListener("click", displayGoogle);
 
       closeGoogle.addEventListener("click", function () {
         popupGoogle.classList.remove("show");
@@ -468,13 +517,9 @@
         }
       });
 
-      triggerMinesotta.addEventListener("click", function () {
-        popupMinesotta.classList.add("show");
-        console.log("Perra");
-      });
+      triggerMinesotta.addEventListener("click", displayMinesotta);
 
       closeMinesotta.addEventListener("click", function () {
-        console.log("perra");
         popupMinesotta.classList.remove("show");
       });
       window.addEventListener("click", function (event) {
