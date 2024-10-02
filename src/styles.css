@@ -114,7 +114,26 @@ footer {
   justify-content: center;
   margin-bottom: 10px;
 }
+/* test */
+.accordion {
+  max-width: 80%;
+}
 
+.location-info,
+.additional-info {
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.title-role {
+  text-transform: uppercase;
+  padding: 6px;
+}
+.additional-info {
+  margin-bottom: 1%;
+}
+
+/* test */
 .projects-section {
   padding-top: 100px;
 }
