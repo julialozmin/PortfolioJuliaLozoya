@@ -70,14 +70,16 @@ footer {
   align-self: center;
 }
 
-.contact-box i {
+.contact-box i,
+.back-arrow i {
   background: var(--branding-color);
   padding: 14px 14px;
   border-radius: 50%;
   transition: all 200ms ease-in-out;
 }
 
-.contact-box i:hover {
+.contact-box i:hover,
+.back-arrow i:hover {
   background: var(--secondary-color);
   color: var(--branding-color);
 }
@@ -211,7 +213,10 @@ footer {
 
 .work-popup-content {
   margin: 6% auto;
-  padding: 20px;
+  padding-top: 3%;
+  padding-bottom: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
   border-radius: 14px;
   width: 100%;
 }
@@ -267,11 +272,14 @@ footer {
   -webkit-user-drag: none;
 }
 
-.about h1 {
+.about h1,
+.work-popup-content h1 {
   font-size: 40px;
 }
 
-.about h2 {
+.about h2,
+.work-popup-content h2,
+.work-popup-content h5 {
   font-size: 18px;
 }
 
@@ -287,7 +295,6 @@ footer {
 .contact i {
   font-size: 20px;
 }
-
 @media (max-width: 570px) {
   h1,
   .content-container h1 {
