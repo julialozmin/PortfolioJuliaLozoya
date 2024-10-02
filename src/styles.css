@@ -176,6 +176,11 @@ footer {
   background-color: var(--secondary-color);
 }
 
+.discreet-link {
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
 .photo-portrait {
   max-height: 400px;
   border-radius: 20px;
