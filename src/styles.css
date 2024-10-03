@@ -114,8 +114,9 @@ footer {
   justify-content: center;
   margin-bottom: 10px;
 }
-/* test */
-.accordion {
+
+.accordion,
+.accordion-title {
   max-width: 80%;
 }
 
@@ -125,7 +126,8 @@ footer {
   font-size: 14px;
 }
 
-.title-role {
+.title-role,
+.accordion-title {
   text-transform: uppercase;
   font-weight: 700;
   padding: 6px;
@@ -134,7 +136,15 @@ footer {
   margin-bottom: 1%;
 }
 
-/* test */
+.accordion-button:not(.collapsed) {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+button.accordion-button:focus {
+  box-shadow: none;
+}
+
 .projects-section {
   padding-top: 100px;
 }
