@@ -4,7 +4,6 @@
   --branding-color: #f8f9fa;
   --secondary-color: #212529;
   --accent-color: #568265;
-  --attention-color: #e24a63;
 }
 
 body {
@@ -272,10 +271,6 @@ button.accordion-button:focus {
   display: block;
 }
 
-.photo-desk {
-  max-height: 546px;
-}
-
 .items,
 .items2 {
   padding: 20px;
@@ -313,17 +308,13 @@ button.accordion-button:focus {
 
 .about h1,
 .work-popup-content h1 {
-  font-size: 40px;
+  font-size: 42px;
 }
 
 .about h2,
 .work-popup-content h2,
 .work-popup-content h5 {
   font-size: 18px;
-}
-
-.contact h5 {
-  color: var(--attention-color);
 }
 
 .contact a {
