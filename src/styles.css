@@ -272,6 +272,10 @@ button.accordion-button:focus {
   display: block;
 }
 
+.photo-desk {
+  max-height: 546px;
+}
+
 .items,
 .items2 {
   padding: 20px;
