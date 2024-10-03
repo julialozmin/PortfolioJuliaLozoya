@@ -127,6 +127,7 @@ footer {
 
 .title-role {
   text-transform: uppercase;
+  font-weight: 700;
   padding: 6px;
 }
 .additional-info {
