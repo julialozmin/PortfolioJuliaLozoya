@@ -100,9 +100,15 @@ footer {
 
 .hero {
   padding: 160px 0px 160px 0px;
-  background-color: var(--branding-color);
+  background-color: var(--accent-color);
   text-align: center;
 }
+
+.hero h1,
+.hero h2 {
+  color: white;
+}
+
 .brief-description {
   font-size: 18px;
   text-align: center;
