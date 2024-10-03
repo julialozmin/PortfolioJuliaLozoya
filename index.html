@@ -35,8 +35,8 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm bg-body-tertiary fixed-top">
-      <div class="container-fluid navbar-style">
+    <nav class="navbar navbar-expand-sm navbar-custom fixed-top">
+      <div class="container-fluid navbar-style navbar-custom">
         <a class="navbar-brand d-none" href="/">Julia Lozoya</a>
         <button
           class="navbar-toggler"
@@ -95,26 +95,27 @@
     </div>
 
     <div class="content home-content">
-      <div class="container mt-5">
-        <p class="brief-description">
+      <div class="container brief-description">
+        <p>
           I am empathetic and positive, with the ability to focus on tasks that
           impact customer engagement and business growth, all while keeping the
           big picture in mind.
         </p>
 
-        <p class="brief-description">
+        <p>
           Decisive, thorough, and highly organized, I have a strong sense of
           ownership and a passion for solving problems and connecting the dots.
           I thrive on working with technology and continuously learning new
           skills to tackle technical challenges and streamline operational
           processes.
         </p>
-
-        <div class="row">
+      </div>
+      <div class="container edex">
+        <div class="row d-flex justify-content-evenly">
           <div
-            class="col-md tech-stack d-flex justify-content-evenly text-center"
+            class="col-lg-6 tech-stack d-flex flex-column justify-content-evenly text-center"
           >
-            <div><h5>TECH STACK</h5></div>
+            <div><h5>COMPETENCES</h5></div>
             <div class="tech-icons">
               <i class="fa-brands fa-html5"></i>
               <i class="fa-brands fa-css3-alt"></i>
@@ -149,9 +150,9 @@
           </div>
 
           <div
-            class="col-md education-languages d-flex justify-content-evenly text-center"
+            class="col-lg-6 education-languages d-flex flex-column justify-content-evenly text-center"
           >
-            <div>
+            <div class="text-start">
               <h5>EDUCATION</h5>
               <p>
                 Bachelor's Degree in Business Administration <br />
@@ -160,10 +161,14 @@
                 Front-End Development Certificate
               </p>
             </div>
-            <div>
+            <div class="d-flex justify-content-start">
               <h5>LANGUAGES</h5>
               <div>
-                <img src="/images/languages.jpg" alt="Languages" />
+                <img
+                  src="/images/languages.jpg"
+                  alt="Languages"
+                  class="icon-languages"
+                />
               </div>
             </div>
           </div>

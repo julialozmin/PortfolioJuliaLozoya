@@ -55,6 +55,16 @@ footer {
 .navbar-brand {
   font-family: var(--primary-font-family);
 }
+.bg-body-tertiary {
+  background-color: var(--branding-color);
+}
+
+.navbar-custom {
+  background-color: var(--accent-color);
+}
+.navbar-custom a {
+  color: white;
+}
 
 .contact-box {
   margin-bottom: 120px;
@@ -127,8 +137,18 @@ footer {
 }
 
 .brief-description {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  max-width: 900px;
+}
+
+.brief-description p {
   font-size: 18px;
   text-align: center;
+}
+
+.icon-languages {
+  max-width: 100px;
 }
 
 .launchAppLink {
