@@ -109,6 +109,23 @@ footer {
   color: white;
 }
 
+.hero h1 {
+  line-height: 1;
+}
+.hero h2 {
+  font-size: 30px;
+}
+
+.hero img {
+  border-radius: 7px;
+}
+
+.hero-content {
+  max-width: 700px;
+  display: block;
+  margin: 0 auto;
+}
+
 .brief-description {
   font-size: 18px;
   text-align: center;
