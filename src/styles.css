@@ -136,15 +136,30 @@ footer {
   margin: 0 auto;
 }
 
+.edex,
 .brief-description {
-  margin-top: 80px;
   margin-bottom: 80px;
   max-width: 900px;
+}
+
+.brief-description {
+  margin-top: 80px;
 }
 
 .brief-description p {
   font-size: 18px;
   text-align: center;
+}
+
+.edex {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section-title {
+  margin: 0 auto;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .icon-languages {
@@ -210,13 +225,6 @@ button.accordion-button:focus {
   border-radius: 20px;
   display: block;
   margin: 0 auto;
-}
-
-.tech-stack {
-  max-width: 650px;
-  margin: 0 auto;
-  display: block;
-  padding-top: 20px;
 }
 
 .basic-link,
