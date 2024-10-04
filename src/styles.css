@@ -67,7 +67,8 @@ footer {
 }
 
 .contact-box {
-  margin-bottom: 120px;
+  display: block;
+  margin: 0 auto;
   padding: 100px;
   background-color: var(--branding-color);
   border-radius: 14px;
@@ -96,6 +97,7 @@ footer {
 .banner {
   background-color: var(--accent-color);
   padding: 20px;
+  margin-top: 120px;
 }
 
 .banner p {
@@ -280,6 +282,9 @@ button.accordion-button:focus {
 .info-banner {
   background-color: var(--branding-color);
   border-radius: 14px;
+  display: block;
+  margin: 0 auto;
+  max-width: 850px;
 }
 
 .popup,
@@ -378,15 +383,18 @@ button.accordion-button:focus {
   font-size: 20px;
   text-decoration: none;
 }
+
 .contact i {
   font-size: 20px;
 }
+
 @media (max-width: 570px) {
   h1,
   .content-container h1 {
     font-weight: bold;
-    font-size: 46px;
+    font-size: 40px;
     line-height: 60px;
+    text-align: left;
   }
   h2 {
     font-size: 22px;
@@ -405,19 +413,69 @@ button.accordion-button:focus {
     font-size: 26px;
   }
 
-  .contact-box {
-    margin: 60px 0px 50px 0px;
-    padding: 20px;
+  footer {
+    margin-top: 60px;
   }
 
-  .hero,
-  .content-container {
-    padding: 80px 5px 0px 5px;
-    text-align: center;
-    min-height: 350px;
+  .contact-box {
+    margin: 0 12px 0 12px;
+    padding: 10px;
   }
+
+  .banner {
+    margin-top: 40px;
+  }
+
+  .container {
+    text-align: left;
+    margin-top: 0px;
+  }
+  .content-container {
+    margin-top: 80px;
+    padding: 20px 12px 20px 12px;
+  }
+
+  .hero {
+    padding: 80px 5px 20px 5px;
+  }
+
+  .hero-content {
+    padding: 10%;
+  }
+  .hero-content h2 {
+    font-size: 20px;
+  }
+  .hero-content h3 {
+    font-size: 14px;
+  }
+
+  .info-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 40px 12px 40px 12px;
+  }
+
+  .info-banner-button {
+    display: flex;
+    justify-content: center;
+    margin: 12px;
+  }
+
+  .info-banner a {
+    margin: 0px;
+  }
+
+  .accordion,
+  .accordion-title {
+    max-width: 95%;
+  }
+
   .brief-description {
-    font-size: 16px;
+    margin-top: 40px;
+    font-size: 14px;
   }
   .basic-link {
     margin-top: 60px;
@@ -429,8 +487,8 @@ button.accordion-button:focus {
     padding: 8px 14px 8px 14px;
   }
 
-  .tech-stack div {
-    margin: 20px 0px 0px;
+  .tech-icons {
+    margin-bottom: 16px;
   }
 
   .projects {
@@ -443,15 +501,22 @@ button.accordion-button:focus {
   }
 
   .photo-portrait {
-    max-height: 200px;
+    max-width: 250px;
     margin: 30px 0 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 
   .project {
     padding-top: 10px;
   }
 
-  .bio {
-    margin: 20px 30px 0 30px;
+  .contact h5 {
+    font-size: 20px;
+  }
+  .contact a,
+  .contact p,
+  .contact i {
+    font-size: 18px;
   }
 }
