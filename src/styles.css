@@ -160,8 +160,7 @@ footer {
 
 .section-title {
   margin: 0 auto;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding: 6px 0px auto;
 }
 
 .icon-languages {
@@ -436,25 +435,36 @@ button.accordion-button:focus {
   }
 
   .hero {
-    padding: 80px 5px 20px 5px;
+    padding: 80px 5px 80px 5px;
   }
 
   .hero-content {
-    padding: 10%;
+    max-height: 60%;
+    max-width: 80%;
   }
+
   .hero-content h2 {
-    font-size: 20px;
+    font-size: 18px;
+    margin-top: 0px;
   }
   .hero-content h3 {
-    font-size: 14px;
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .education-languages div {
+    align-self: center;
   }
 
   .info-banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0px auto;
     margin: 40px 12px 40px 12px;
   }
 
